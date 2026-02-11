@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARB Logistics</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f8;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+    background: #ffffff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2bb673;
+}
+
+.logo-box {
+    width: 32px;
+    height: 32px;
+    background: #2bb673;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7b8a97;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2bb673;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    display: flex;
+    min-height: 90vh;
+}
+
+/* Left Side */
+.hero-left {
+    flex: 1;
+    padding: 100px 8%;
+    background: #eef2f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+    line-height: 1.2;
+}
+
+.hero-left p {
+    font-size: 15px;
+    color: #6c7a86;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 480px;
+}
+
+.hero-btn {
+    width: 130px;
+    padding: 12px;
+    border: none;
+    background: #8c96a3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #2bb673;
+}
+
+/* Right Side */
+.hero-right {
+    flex: 1;
+    background: url('https://images.unsplash.com/photo-1601582589907-f92af5ed9db8?q=80&w=1600') no-repeat center center/cover;
+}
+
+/* ================= RESPONSIVE ================= */
+
+.menu-toggle {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media(max-width: 900px) {
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        display: none;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-right {
+        height: 400px;
+    }
+
+    .hero-left {
+        padding: 60px 8%;
+    }
+
+    .hero-left h1 {
+        font-size: 32px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-box"></div>
+        ARB Logistics
+    </div>
+
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="nav-menu">
+            <li><a href="services.html" target="_blank">Services</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-left">
+        <h1>Delivering Excellence.<br>Every Mile of the Way.</h1>
+        <p>
+            SwiftLine Logistics is your trusted partner for seamless global supply chain solutions.
+            From secure warehousing to efficient freight forwarding and last-mile delivery,
+            we ensure your goods arrive on time, every time.
+        </p>
+        <button class="hero-btn">get fast</button>
+    </div>
+
+    <div class="hero-right"></div>
+</section>
+
+<script>
+function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

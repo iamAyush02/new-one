@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services - ARB Logistics</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f8;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    padding: 20px 8%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    color: #2bb673;
+    font-size: 18px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #2bb673;
+    font-size: 14px;
+}
+
+/* ================= SERVICES SECTION ================= */
+
+.services {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #2d2d2d;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #6c7a86;
+    line-height: 1.6;
+}
+
+/* ================= LOYALTY SECTION ================= */
+
+.loyalty {
+    margin: 80px 8%;
+    padding: 60px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #8fa8ff, #a4b8ff);
+    color: white;
+    text-align: center;
+}
+
+.loyalty h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.loyalty p {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.loyalty button {
+    padding: 12px 28px;
+    background: #ff8c32;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.loyalty button:hover {
+    background: #ff6f00;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+    .loyalty {
+        padding: 40px 20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ARB Logistics</div>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+</header>
+
+<section class="services">
+    <h2>Our Comprehensive Services</h2>
+
+    <div class="service-grid">
+        <div class="service-card">
+            <div class="service-icon">📦</div>
+            <h3>Real-Time Tracking</h3>
+            <p>Monitor your shipments with precision and live updates, ensuring complete visibility from origin to destination.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Secure Warehousing</h3>
+            <p>State-of-the-art facilities equipped with advanced security for optimal storage and inventory management.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>Global Freight Forwarding</h3>
+            <p>Seamless international shipping solutions by air, sea, and land tailored to meet global trade needs.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚚</div>
+            <h3>Efficient Last-Mile Delivery</h3>
+            <p>Fast and reliable delivery services ensuring goods reach their final destination on time, every time.</p>
+        </div>
+    </div>
+</section>
+
+<section class="loyalty">
+    <h2>SwiftLine Loyalty Program: Your Success, Our Reward.</h2>
+    <p>
+        Join our exclusive loyalty program and unlock a world of benefits, including priority service,
+        discounted rates, and dedicated account management. We value your partnership!
+    </p>
+    <a href="apply.html" target="_blank">
+        <button>Join Our Program</button>
+    </a>
+    </section>
+
+</body>
+</html>
